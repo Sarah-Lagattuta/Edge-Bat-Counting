@@ -11,7 +11,7 @@ Bat population counts are used widely for conservation management and wildlife d
 
 ---
 
-# Project Structure
+# Overall Project Structure
 
 This project is organized into two parent directories. Each of these contains its own README.md file.
 
