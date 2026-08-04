@@ -17,4 +17,4 @@ This project is organized into two primary components. Each of these contains it
 
 - **`Original_Pipeline/`** — The original YOLOv11/SORT bat counting pipeline for processing pre-recorded thermal videos on a local workstation. This directory contains the original model, training workflow, and supporting documentation (developer: Sarah Lagattuta, slagattuta@ucdavis.edu).
 
-- **`SAGE_Bat_Counter/`** — The edge-computing implementation of the pipeline for deployment on SAGE/Waggle hardware with NVIDIA Thor GPU acceleration. This directory contains the deployment code, configuration files, and the resources required to execute the model on edge devices (developers: Noah Bentoshana & Liam Fitzpatrick, nbetoshana@ucdavis.edu)
+- **`SAGE_Bat_Counter/`** — The edge-computing implementation of the pipeline for deployment on SAGE/Waggle hardware with NVIDIA Thor GPU acceleration. This directory contains the deployment code, configuration files, and the resources required to execute the model on edge devices (developers: Noah Betoshana & Liam Fitzpatrick, nbetoshana@ucdavis.edu)
