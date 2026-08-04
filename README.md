@@ -13,7 +13,7 @@ Bat population counts are used widely for conservation management and wildlife d
 
 # Overall Project Structure
 
-This project is organized into two primary components. Each of these contains its own README.md file.
+This project is organized into two primary components. Each of these contains its own `README.md` file.
 
 - **`Original_Pipeline/`** — The original YOLOv11/SORT bat counting pipeline for processing pre-recorded thermal videos on a local workstation. This directory contains the original model, training workflow, and supporting documentation.
 
