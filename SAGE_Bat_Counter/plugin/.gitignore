@@ -1,0 +1,8 @@
+# Vendored into plugin/ at build/dev time so pluginctl build plugin/ works with a
+# self-contained build context. The source-of-truth copies live at the repo root:
+#   models/PB_noaug/weights/best.pt  -> plugin/models/best.pt
+#   sort/sort.py                      -> plugin/sort/sort.py
+#   videos/*.mov                      -> plugin/videos/
+models/
+sort/
+videos/

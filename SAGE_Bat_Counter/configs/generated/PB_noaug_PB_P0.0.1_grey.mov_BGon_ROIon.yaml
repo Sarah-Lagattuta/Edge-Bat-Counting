@@ -1,0 +1,21 @@
+tracking:
+  detection_confidence: 0.10
+  model_file: "models/PB_noaug/weights/best.pt"
+  results_path: "results/counts/PB_noaug_PB_P0.0.1_grey.mov_BGon_ROIon.csv"
+  imgsz: 1280
+  sort:
+    iou_threshold: 0.10
+    max_age: 30
+    min_hits: 5
+  video_files:
+  - amplification: 1.0
+    path: "videos/P0.0.1_grey.mov"
+    tracking_region:
+    - 0.0
+    - 0.0
+    - 0.49
+    - 0.70
+  write_annotated_frames: "results/annotations/PB_noaug_PB_P0.0.1_grey.mov_BGon_ROIon"
+background_subtraction:
+  enabled: true
+  window_size: 30

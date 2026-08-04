@@ -1,0 +1,48 @@
+[workspace]
+authors = ["ssunsonic <erictsun02@gmail.com>"]
+channels = ["conda-forge"]
+description = "Mobile Bat Counter optimized for Sage Grande edge deployment"
+name = "mobile-bat-counter"
+platforms = ["linux-aarch64"]
+version = "0.1.0"
+
+[tasks]
+
+# Do not require Pixi to validate CUDA virtual packages.
+# Sage Thor exposes CUDA through the NVIDIA runtime/container,
+# not as a Conda virtual package.
+[system-requirements]
+cuda = "12.0"
+
+[dependencies]
+# Match Sage Thor ARM64 CUDA environment
+cuda = ">=12,<13"
+
+# Avoid forcing a specific CUDA build string that may not exist on ARM64.
+# Let conda resolve the available PyTorch CUDA package.
+pytorch = ">=2.5,<3"
+torchvision = ">=0.20,<0.21"
+
+ultralytics = ">=8.3.62,<9"
+
+scikit-image = ">=0.25.1,<0.26"
+filterpy = ">=1.4.5,<2"
+opencv = ">=4.11.0,<5"
+
+numpy = ">=1.26,<2"
+scipy = ">=1.11,<2"
+pandas = ">=2.2.3,<3"
+
+ffmpeg = "*"
+ffmpeg-python = ">=0.2.0,<0.3"
+
+matplotlib = ">=3.8,<4"
+
+lap = "*"
+
+ipdb = ">=0.13.13,<0.14"
+ipython = ">=8.32.0,<9"
+ruff = ">=0.9.6,<0.10"
+
+[pypi-dependencies]
+pywaggle = ">=0.56.3,<0.57"
