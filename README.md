@@ -13,8 +13,8 @@ Bat population counts are used widely for conservation management and wildlife d
 
 # Overall Project Structure
 
-This project is organized into two parent directories. Each of these contains its own README.md file.
+This project is organized into two primary components. Each of these contains its own README.md file.
 
-`Original_Pipeline/` contains the base data and information for running the bat counting YOLOv11/SORT model on a local computer for pre-recorded thermal video.
+- **`Original_Pipeline/`** — The original YOLOv11/SORT bat counting pipeline for processing pre-recorded thermal videos on a local workstation. This directory contains the original model, training workflow, and supporting documentation.
 
-`SAGE_Bat_Counter/` contains all code and data required for running the bat counting model using SAGE edge computing. This directory also contains a copy of the training data and all necessary components from `Original_Pipeline/`.
+- **`SAGE_Bat_Counter/`** — The edge-computing implementation of the pipeline for deployment on SAGE/Waggle hardware with NVIDIA Thor GPU acceleration. This directory contains the deployment code, configuration files, and the resources required to execute the model on edge devices.
